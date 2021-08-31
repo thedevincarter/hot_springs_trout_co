@@ -61,6 +61,16 @@ const theme = extendTheme({
             '900': '#111B22',
         },
     },
+    styles: {
+        global: {
+            a: {
+                color: 'white',
+                _hover: {
+                    textDecoration: 'underline',
+                },
+            },
+        },
+    },
 });
 
 export default MyApp;

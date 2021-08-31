@@ -1,21 +1,22 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { Center, Heading } from '@chakra-ui/react';
+
+import Layout from '../components/layout/Layout';
 
 const Services: NextPage = () => {
     return (
-        <div className={styles.container}>
+        <Layout>
             <Head>
                 <title>Troutfitters Services</title>
                 <meta name="description" content="Services provided by troutfitters" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.main}>
-                <h1 className={styles.title}>Troutfitters Services</h1>
-            </main>
-        </div>
+            <Center>
+                <Heading as="h1">Troutfitters Services</Heading>
+            </Center>
+        </Layout>
     );
 };
 
